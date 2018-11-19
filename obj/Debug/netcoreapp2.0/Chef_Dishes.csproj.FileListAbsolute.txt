@@ -1,0 +1,11 @@
+C:\Users\insiya\Documents\C#\Chef_Dishes\obj\Debug\netcoreapp2.0\Chef_Dishes.csprojResolveAssemblyReference.cache
+C:\Users\insiya\Documents\C#\Chef_Dishes\obj\Debug\netcoreapp2.0\Chef_Dishes.csproj.CoreCompileInputs.cache
+C:\Users\insiya\Documents\C#\Chef_Dishes\obj\Debug\netcoreapp2.0\Chef_Dishes.AssemblyInfoInputs.cache
+C:\Users\insiya\Documents\C#\Chef_Dishes\obj\Debug\netcoreapp2.0\Chef_Dishes.AssemblyInfo.cs
+C:\Users\insiya\Documents\C#\Chef_Dishes\bin\Debug\netcoreapp2.0\Chef_Dishes.deps.json
+C:\Users\insiya\Documents\C#\Chef_Dishes\bin\Debug\netcoreapp2.0\Chef_Dishes.runtimeconfig.json
+C:\Users\insiya\Documents\C#\Chef_Dishes\bin\Debug\netcoreapp2.0\Chef_Dishes.runtimeconfig.dev.json
+C:\Users\insiya\Documents\C#\Chef_Dishes\bin\Debug\netcoreapp2.0\Chef_Dishes.dll
+C:\Users\insiya\Documents\C#\Chef_Dishes\bin\Debug\netcoreapp2.0\Chef_Dishes.pdb
+C:\Users\insiya\Documents\C#\Chef_Dishes\obj\Debug\netcoreapp2.0\Chef_Dishes.dll
+C:\Users\insiya\Documents\C#\Chef_Dishes\obj\Debug\netcoreapp2.0\Chef_Dishes.pdb
