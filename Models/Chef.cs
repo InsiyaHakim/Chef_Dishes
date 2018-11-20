@@ -64,6 +64,6 @@ namespace Chef_Dishes.Models
         [NotMapped]
         public int [] Tastiness_Num {get; set;}
 
-
+        public Chef chef{get;set;}
     }
 }
