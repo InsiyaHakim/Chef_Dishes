@@ -21,7 +21,7 @@ namespace Chef_Dishes.Models
         [Required(ErrorMessage="Date of Birth is required")]
         [DataType(DataType.Date)]
         [Display(Name="Date Of Birth")]
-        public DateTime dob{get;set;}
+        public DateTime? dob{get;set;}
 
         public DateTime created_at{get;set;}
         public DateTime updated_at{get;set;}
@@ -62,7 +62,10 @@ namespace Chef_Dishes.Models
         public DateTime updated_at{get;set;}
 
         [NotMapped]
-        public int [] Tastiness_Num {get; set;}
+        public int [] Tastiness_Num
+        {
+            get{return new int[] {1,2,3,4,5};}
+        }
 
         public Chef chef{get;set;}
     }

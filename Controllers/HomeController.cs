@@ -50,44 +50,40 @@ namespace Chef_Dishes
         [HttpGet("add_dish")]
         public IActionResult AddDish()
         {
-            int[] tastiness_num = new int[]
-            {
-                1,2,3,4,5
-            };
-            Dishes add_tastiness = new Dishes()
-            {
-                Tastiness_Num = tastiness_num
-            };
             List<Chef> Chefs = dbContext.chef.ToList();
             ViewBag.Chefs= Chefs;
-            return View(add_tastiness);
+            return View();
         }
 
         [HttpPost("createDish")]
         public IActionResult CreateDish(Dishes dishes)
         {
+            List<Chef> Chefs = dbContext.chef.ToList();
+
             if(ModelState.IsValid)
             {
-                // if(dishes.calories == 0 || dishes.Tastiness == 0)
-                // {
-                //     ModelState.AddModelError("calories","No any field should be empty");
-                //     return View("AddDish");
-                // }
+                if(dishes.Tastiness == 0)
+                {
+                    ModelState.AddModelError("Tastiness","No any field should be empty");
+                }
                 if(dishes.calories == 0)
                 {
                     ModelState.AddModelError("calories","Calories must be more than 0");
+                }
+                if(dishes.Tastiness < 1 || dishes.Tastiness > 5)
+                {
+                    ModelState.AddModelError("Tastiness","Tastiness must be more than 0 and less then 6");
+                }
+                if(ModelState.IsValid == false)
+                {
+                    ViewBag.Chefs= Chefs;
                     return View("AddDish");
                 }
-                // if(dishes.Tastiness < 1 || dishes.Tastiness > 5)
-                // {
-                //     ModelState.AddModelError("Tastiness","Tastiness must be more than 0 and less then 6");
-                //     return View("AddDish");
-                // }
-                
                 return RedirectToAction("AddDish");
             }
-            else
-                return View("AddDish");
+           
+            ViewBag.Chefs= Chefs;
+            return View("AddDish");
         }
     }
 }
